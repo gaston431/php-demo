@@ -9,7 +9,7 @@
             <a href="./posts" class="text-blue-500 underline">go back...</a>
         </p>
 
-        <p><?= $post['title'] ?></p>
+        <p><?= htmlspecialchars($post['title']) ?></p>
     </div>
   </main>
 
