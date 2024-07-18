@@ -22,4 +22,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
 }
 
-require 'views/post-create.view.php';
+require 'views/posts/create.view.php';

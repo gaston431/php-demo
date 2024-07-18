@@ -3,15 +3,7 @@
 
 
 //$uri = parse_url($_SERVER['REQUEST_URI'])['path'];
-//dd($uri);
-
-$routes = [
-    '/' => 'controllers/index.php',
-    '/about' => 'controllers/about.php',
-    '/posts' => 'controllers/posts.php',
-    '/post' => 'controllers/post.php',
-    '/contact' => 'controllers/contact.php',
-];
+var_dump('$uri');
 
 function routeToController($uri, $routes) {
     if (array_key_exists($uri, $routes)) {
