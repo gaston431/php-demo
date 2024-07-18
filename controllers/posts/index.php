@@ -1,10 +1,13 @@
 <?php
 
-$config = require 'config.php';
-$db = new Database($config['database']);
+use Core\App;
+use Core\Database;
 
-$heading = 'My Posts';
+$db = App::resolve(Database::class);
 
 $posts = $db->query('select * from posts where user_id = 1')->get();
 
-require "views/posts/index.view.php";
+view("posts/index.view.php", [
+    'heading' => 'My Posts',
+    'posts' => $posts
+]);

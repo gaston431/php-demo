@@ -7,10 +7,10 @@
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
           <?php //dd($_SERVER['REQUEST_URI'])?>
-          <li><a href="./" class="<?= urlIs('/demo/') ? 'bg-dark text-white' : 'text-gray-300' ?> nav-link px-2 link-secondary active" aria-current="page" >Home</a></li>
-          <li><a href="./about" class="<?= urlIs('/demo/about') ? 'bg-dark text-white' : 'text-gray-300' ?> nav-link px-2 link-body-emphasis">About</a></li>
-          <li><a href="./posts" class="<?= urlIs('/demo/posts') ? 'bg-dark text-white' : 'text-gray-300' ?> nav-link px-2 link-body-emphasis">Posts</a></li>
-          <li><a href="./contact" class="<?= urlIs('/demo/contact') ? 'bg-dark text-white' : 'text-gray-300' ?> nav-link px-2 link-body-emphasis">Contact</a></li>
+          <li><a href="/" class="<?= urlIs('/') ? 'bg-dark text-white' : 'text-gray-300' ?> nav-link px-2 link-secondary active" aria-current="page" >Home</a></li>
+          <li><a href="/about" class="<?= urlIs('/about') ? 'bg-dark text-white' : 'text-gray-300' ?> nav-link px-2 link-body-emphasis">About</a></li>
+          <li><a href="/posts" class="<?= urlIs('/posts') ? 'bg-dark text-white' : 'text-gray-300' ?> nav-link px-2 link-body-emphasis">Posts</a></li>
+          <li><a href="/contact" class="<?= urlIs('/contact') ? 'bg-dark text-white' : 'text-gray-300' ?> nav-link px-2 link-body-emphasis">Contact</a></li>
           <li><a href="#" class="nav-link px-2 link-body-emphasis">Products</a></li>
           <li><a href="#" class="nav-link px-2 link-body-emphasis">Testing</a></li>
         </ul>

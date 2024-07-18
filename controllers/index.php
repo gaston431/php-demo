@@ -37,6 +37,10 @@
         return $book['releaseYear'] === 1968 && $book['name'] === 'Do Androids Dream of Electric Sheep';
     });
 
-    require 'views/index.view.php'
+    view("index.view.php", [
+        'heading' => 'Home',
+        'message' => $message,
+        'booksFiltered' => $booksFiltered
+    ]);
 ?> 
 

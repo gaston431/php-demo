@@ -13,7 +13,8 @@ $post = $db->query('select * from posts where id = :id', [
 
 authorize($post['user_id'] === $currentUserId);
 
-view("posts/show.view.php", [
-    'heading' => 'Post',
+view("posts/edit.view.php", [
+    'heading' => 'Edit Post',
+    'errors' => [],
     'post' => $post
 ]);
