@@ -5,7 +5,7 @@
 <main>
 <div class="container">
 
-    <p> Home page </p>
+    <p>Hello, <?= $_SESSION['user']['email'] ?? 'Guest' ?>. Welcome to the home page.</p>
 
     <?= $message ?>  
     <ul>

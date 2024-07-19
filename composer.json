@@ -1,0 +1,26 @@
+{
+    "name": "gasto/demo",
+    "authors": [
+        {
+            "name": "gaston431",
+            "email": "gaston_431@hotmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/collections": "^10.48"
+    },
+    "autoload": {
+        "psr-4": {
+            "Core\\": "Core/",
+            "Http\\": "Http/"
+        }
+    },
+    "require-dev": {
+        "pestphp/pest": "^2.34"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
