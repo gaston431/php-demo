@@ -1,2 +1,2 @@
 # php-demo
-Mini Framework PHP
+Mini PHP Framework
